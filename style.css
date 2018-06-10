@@ -42,6 +42,12 @@ button:hover {
   padding-right: 0.5em;
   margin-bottom: 2em;
 }
+.minuteur {
+  background: rgba(255,255,255,.3);
+}
+.fini {
+  background: rgba(255,0,0,.3);
+}
 
 .checkbox {
   position: absolute;
@@ -64,6 +70,12 @@ button:hover {
   right: 0.25em;
   font-size: 1.2em;
   text-align: center;
+}
+
+.resetter {
+  position: absolute;
+  top: 0.4em;
+  left: 0.5em;
 }
 
 .screen {
