@@ -1,0 +1,93 @@
+
+body {
+  --blue: #0084ff;
+  --blue-darker: #036bcc;
+  background: #20262E;
+  padding: 20px;
+  font-family: Helvetica, sans-serif;
+  color: white;
+}
+div, span, input {
+  box-sizing: border-box;
+}
+
+.headings {
+  text-align: center;
+  margin: 1em auto 2em;
+}
+
+button {
+  background: var(--blue);
+  border: none;
+  border-radius: 5px;
+  padding: 8px 14px;
+  font-size: 15px;
+  color: #fff;
+  cursor: pointer;
+}
+button:hover {
+  background: var(--blue-darker);
+}
+
+.main {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.chrono,
+.minuteur {
+  position: relative;
+  background: rgba(0,0,0,.3);
+  padding-right: 0.5em;
+  margin-bottom: 2em;
+}
+
+.checkbox {
+  position: absolute;
+  top: 50%;
+  left: 1em;
+}
+
+.start {
+  position: absolute;
+  bottom: 2em;
+  right: 0.5em;
+}
+
+.remover {
+  padding: 0.25em;
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0.25em;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.screen {
+  width: 170px;
+  height: 1em;
+  padding: 1em;
+  background: black;
+  color: green;
+  margin: 1em 2em;
+  font-size: 1.5em;
+  text-align: center;
+  line-height: 0.25em;
+}
+
+.title {
+  text-align: center;
+}
+.title input {
+  border: 0;
+  background: rgba(0,0,0,.3);
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.5em;
+  width: 100%;
+}

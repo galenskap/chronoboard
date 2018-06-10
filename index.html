@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Chronoboard</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="headings">
+      <label for="type">Ajouter un :</label>
+      <select name="type" id="chrono-type">
+       <option value="chrono">Chronomètre</option>
+       <option value="minuteur">Minuteur</option>
+      </select>
+      <button id="submit">Ok</button>
+    </div>
+
+    <div class="main" id="board">
+    </div>
+
+    <div class="headings multistart">
+      <button id="multistarter">Start/Stop</button>
+      <span class="comments">tous les chronos cochés</span>
+    </div>
+    
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
