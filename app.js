@@ -38,7 +38,7 @@ function createChrono(type)
   // ajout du bouton start
   var launcher = document.createElement('button');
   launcher.className = "start";
-  var txt = document.createTextNode('>');
+  var txt = document.createTextNode('▶');
   launcher.appendChild(txt);
   launcher.addEventListener("click", function() {
     toggleState(chronobject.id);
@@ -48,7 +48,7 @@ function createChrono(type)
 	// ajout de la croix pour supprimer
   var remover = document.createElement('span');
   remover.className = "remover";
-  var cross = document.createTextNode('x');
+  var cross = document.createTextNode('✖');
   remover.appendChild(cross);
   remover.addEventListener("click", function() {
     deleteChrono(chronobject.id);
@@ -73,10 +73,10 @@ function toggleState(id)
     var launcher = domobject.querySelector('.start');
     if (domobject.classList.contains('on')) {
     	domobject.classList.remove('on');
-      launcher.innerHTML = '>'; // play
+      launcher.innerHTML = '▶'; // play
     } else {
     	domobject.classList.add('on');
-      launcher.innerHTML = '||'; // pause
+      launcher.innerHTML = '❚❚'; // pause
     }
   }
 }

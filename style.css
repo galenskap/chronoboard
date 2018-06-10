@@ -39,8 +39,9 @@ button:hover {
 .minuteur {
   position: relative;
   background: rgba(0,0,0,.3);
-  padding-right: 0.5em;
   margin-bottom: 2em;
+  border-radius: 3px;
+  overflow: hidden;
 }
 
 .checkbox {
